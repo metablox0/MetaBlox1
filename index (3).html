@@ -56,7 +56,7 @@ svg{width:1.1em;height:1.1em;vertical-align:-.2em;flex:none}.ic svg{width:32px;h
 <footer>© 2026 Metablox • Godot ile yapıldı <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></footer>
 <script>
 document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{document.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));b.classList.add('on');const f=b.dataset.f;document.querySelectorAll('.card').forEach(c=>c.style.display=(f==='Hepsi'||c.dataset.c===f)?'':'none')});
-const APK_URL=""; // APK indirme linkini buraya yaz
+const APK_URL=""; /https://drive.google.com/file/d/1GYpIs6KoalwkUyG79urRFRDDjtg4BNzD/view?usp=drivesdk/ APK indirme linkini buraya yaz
 const dl=document.getElementById('dl'),apk=document.getElementById('apk'),msg=document.getElementById('msg');
 if(APK_URL){apk.href=APK_URL;apk.setAttribute('download','')}
 apk.onclick=e=>{if(!APK_URL){e.preventDefault();msg.textContent='APK linki yakında eklenecek.'}};
